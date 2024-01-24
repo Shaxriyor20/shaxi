@@ -1,21 +1,21 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Navigation from './Navigation'
 import About from './About'
-import Home from './Home'
-import Register from './Register'
-import Login from './Login'
+import Product from './Product'
+import Catagoty from './Catagoty'
+import Lol from './Lol'
+import NoPage from './NoPage'
 
 function AllComponents(props) {
     const location = useLocation()
     return (
         <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Navigation />} >
-                <Route index element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/Register" element={<Register />} />
-                <Route path="/Login" element={<Login />} />
-                {/* <Route path="/blog" element={<Blog />} /> */}
-                <Route path="*" element={"404"} />
+                <Route path='/about' index element={<About />} />
+                <Route path="/product" element={<Product />} />
+                <Route path="/catagoty" element={<Catagoty />} />
+                <Route path="/Lol" element={<Lol />} />
+                <Route path="*" element={<NoPage />} />
             </Route>
         </Routes>
     );

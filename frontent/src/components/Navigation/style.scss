@@ -1,5 +1,36 @@
-.right {
-    position: relative;
-    margin-left: 1420px;
-    margin-top: -25px;
+.navigation-wrapper {
+    nav {
+        background-color:snow;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        position: relative;
+        z-index: 1;
+
+        * {
+            display: inline-block;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .left {
+        }
+        .middle {
+        }
+        .right {
+            button {
+                margin-right: 15px;
+            }
+            span {
+                font-size: 2em;
+                padding: 0px 10px;
+            }
+        }
+    }
 }
