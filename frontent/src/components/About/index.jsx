@@ -10,9 +10,17 @@ function About() {
 
     
     return (
-        <>        
-        <CarouselComponent images={images} blurred={true}/>
-        </>
+        <div id="about-wrapper">        
+        <CarouselComponent images={images} blurred={true}>
+            <div className="inner-carousel">
+                    <h1>Exclusive Deals Of <br /> Furniture <span>Collection</span></h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum fuga facilis</p>
+                    <br />
+                    <button className="warning-btn2">Buy Now</button>
+                    <button className="warning-btn">Explore</button>
+            </div>
+        </CarouselComponent>
+        </div>
     );
 }
 

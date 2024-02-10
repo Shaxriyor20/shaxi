@@ -8,7 +8,7 @@ function Nav() {
             </div>
             <div className="middle">
                 <Link to={'about'}>Home</Link>
-                <Link to={'product'}>Product</Link>
+                <Link to={'products'}>Products</Link>
                 <Link to={'catagoty'}>Catagoty</Link>
                 <Link to={'Lol'}>About us</Link>
             </div>
