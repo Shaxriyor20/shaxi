@@ -11,7 +11,8 @@ function AllComponents(props) {
     return (
         <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Navigation />} >
-                <Route path='/about' index element={<About />} />
+                <Route index element={<About />} />
+                <Route path='/about' element={<About />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/catagoty" element={<Catagoty />} />
                 <Route path="/Lol" element={<Lol />} />
