@@ -1,0 +1,85 @@
+@import '../../assets/styles/settings';
+
+.body-v {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+
+    .body-main {
+        width: 100%;
+        height: 900px;
+        background: url('../../assets/images/bag.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .main {
+            padding: 200px;
+
+            .text {
+                position: relative;
+
+                p {
+                    color: $light;
+                }
+
+                .title {
+                    font-weight: bold;
+                    font-size: 72px;
+                    line-height: 87px;
+                }
+
+                .subtitle {
+                    color: #00000000;
+                    font-weight: bold;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: $light;
+                    font-size: 96px;
+                    line-height: 117px;
+                }
+
+                .litle-text {
+                    color: $yellow-b;
+                    font-family: "mr_KindlyJasmineG";
+                    font-weight: 400;
+                    font-size: 64px;
+                    position: absolute;
+                    left: 500px;
+                    top: 50px;
+                }
+            }
+
+            #btn {
+                @extend %btn;
+                position: absolute;
+                left: 200px;
+                top: 500px;
+                z-index: 9;
+            }
+        }
+    }
+
+    .marquee {
+        position: absolute;
+        right: 0;
+        bottom: 150px;
+
+        img {
+            width: 360px;
+            height: 227px;
+            margin-right: 15px;
+        }
+    }
+}
+
+@media(max-width: $large-screen){
+    .body-v{
+        .body-main{
+            .main{
+                padding: 200px  10px 10px  50px;
+                #btn{
+                    left: 100px;
+                }
+            }
+        }
+    }
+}

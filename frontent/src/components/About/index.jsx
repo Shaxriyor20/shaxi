@@ -1,43 +1,36 @@
-import "./style.scss"
-import CarouselComponent from "../common/Carousel"
-
-import Img1 from '../../assets/images/img1.jpeg'
-import Img2 from '../../assets/images/img2.jpeg'
-import Img3 from '../../assets/images/img3.jpeg'
-import Img4 from '../../assets/images/free.png'
-import Img5 from '../../assets/images/supor.jpg'
-import Img6 from '../../assets/images/year.png'
-
-
-
+import './style.scss'
+import about from "../../assets/images/About.png";
+import Values from './Values';
+import {Link} from "react-router-dom"
 function About() {
-    const images = [Img1, Img2, Img3]
-
-    
-    return (
-    <div id="about-wrapper">        
-        <CarouselComponent images={images} blurred={true}>
-            <div className="inner-carousel">
-                    <h1> Exclusive Deals Of <br /> Furniture <span>Collection</span></h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum fuga facilis</p>
+    return (  
+        <div className="first-content">
+            <div className="second-content">
+                <img src={about} alt="About"/>
+                <div className="about">
+                    <h1>О нас</h1>
+                    <br /> 
                     <br />
-                    <button className="warning-btn2">Buy Now</button>
-                    <button className="warning-btn">Explore</button>
+                    <p>PeroTravel - Первый онлайн-сервис по бронированию экскурсий без очередей и операторов.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <br />
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                    <br />
+                </div>
             </div>
-        </CarouselComponent>
-        <br />
-        <br />
-        <br />
-        <br />
-        <div className="our-express">
-            <h1 className="hoh">Why <br /> <span>You Get</span> With <br /> Our Furniture</h1>
-            <p className="hoh1">Lorem ipsum dolor sit amet consectetur, <br />adipisicing elit. Similique, quis?</p>
-            <img className="img-10" src={Img4} alt=""  width="150px"/>
-            <img className="img-11" src={Img5} alt=""  width="150px"/>
-            <img className="img-12" src={Img6} alt=""  width="150px"/>
+            <br />
+            <br />
+            <div className="third-content">
+                <h1>Виды экскурсий</h1>
+                <Values />
+                <br />
+                <p className="parag">Выбирайте на нашем сайте экскурсию, которая подходит именно вам и записывайтесь онлайн без очередей, просто и быстро!</p>
+                <Link to={"/excursions"}>
+                <button>К экскурсиям ➡</button>
+                </Link>
+                
+            </div>
         </div>
-        
-    </div>
     );
 }
 
