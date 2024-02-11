@@ -1,10 +1,7 @@
-import "./style.scss"
-
-
-function About() {
+function Lol() {
     return ( 
-        <h1>About us</h1>
+        <h1>About</h1>
      );
 }
 
-export default About;
+export default Lol;

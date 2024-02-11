@@ -1,10 +1,6 @@
-import "./style.scss"
-
 function NoPage() {
-    return (
-        <div>
-            <h1>404 Page Not Found</h1>
-        </div>
+    return ( 
+        <h1>404</h1>
     );
 }
 

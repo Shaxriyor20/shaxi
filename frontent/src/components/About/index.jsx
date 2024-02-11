@@ -8,6 +8,8 @@ import Img4 from '../../assets/images/free.png'
 import Img5 from '../../assets/images/supor.jpg'
 import Img6 from '../../assets/images/year.png'
 
+
+
 function About() {
     const images = [Img1, Img2, Img3]
 
@@ -33,9 +35,8 @@ function About() {
             <img className="img-10" src={Img4} alt=""  width="150px"/>
             <img className="img-11" src={Img5} alt=""  width="150px"/>
             <img className="img-12" src={Img6} alt=""  width="150px"/>
-            <img src="" alt="" />
         </div>
-
+        
     </div>
     );
 }

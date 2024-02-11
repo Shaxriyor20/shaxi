@@ -25,6 +25,7 @@ function CarouselComponent(props) {
                     })
                 }
             </Carousel>
+            
         </section>
     );
 }
