@@ -1,5 +1,5 @@
-import { BrowserRouter  } from "react-router-dom";
-import AllComponents from "./components/AllComponents";
+import AllComponents from "./components/AllComponents"
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (

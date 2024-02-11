@@ -1,7 +1,7 @@
 import './style.scss'
 import about from "../../assets/images/About.png";
 import Values from './Values';
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 function About() {
     return (  
         <div className="first-content">

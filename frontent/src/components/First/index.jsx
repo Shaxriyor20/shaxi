@@ -1,42 +1,41 @@
 import './style.scss'
-import play1 from "../../assets/images/play1.png";
-import play2 from "../../assets/images/play2.png";
-import { Link } from 'react-router-dom';
+import Image8 from '../../assets/images/play1.png'
+import Image1 from '../../assets/images/play2.png'
+import Image6 from '../../assets/images/play3.png'
+import Image7 from '../../assets/images/play4.png'
+import Image3 from '../../assets/images/About.png'
 import Marquee from 'react-fast-marquee';
+
 import NewExcurc from '../NewExcurs';
 import About from '../About';
 import Galereya from '../Galereya';
 import ContactsForm from '../ContactsForm';
 import Reviews from '../Reviews';
-
-function First() {
-    return ( 
-        <div className="first-page">
-            <div className="second-page">
-                 <div className="name-page">
-                <h1 className='h1'>Путешествуй</h1>
-                <h3>вместе с</h3>
-                <h1 className="pero">PERO TRAVEL</h1>
-                <Link to={"/excursions"}>
-                <button className="excursion">К экскурсиям ➡</button>
-                </Link>
-                
+function Main() {
+    return (
+    <div>
+        <div className="body-v">
+            <div className='body-main'>
+                <div className="main">
+                    <div className="text">
+                        <p className="title">ПУТЕШЕСТВУЙ</p>
+                        <p className="litle-text">вместе с</p>
+                        <p className="subtitle">PERO TRAVEL</p>
+                    </div>
+                    <button id='btn'>К экскурсиям</button>
+                    <br />
+                    <br />
+                </div>
             </div>
-    <div className="images">
-    <Marquee className='marquee' direction='right'>
-                <img src={play1} alt="" />
-                <img src={play2} alt="" /> 
-                <img src={play2} alt="" /> 
-                <img src={play2} alt="" />  
-                <img src={play2} alt="" />  
-    </Marquee>
-            </div>
-            </div>
-           <NewExcurc/>
-           <br />
-           <br />
-           <br />
-            <br />
+            <Marquee className='marquee' direction='right'>
+                <img src={Image1} alt="" />
+                <img src={Image8} alt="" /> 
+                <img src={Image6} alt="" /> 
+                <img src={Image7} alt="" />  
+                <img src={Image3} alt="" />  
+            </Marquee>
+        </div>
+        <NewExcurc/>
             <About/> 
             <Galereya/>
             <br />
@@ -47,8 +46,8 @@ function First() {
             <Reviews/>
             <br />
             <ContactsForm/>
-            </div>
-     );
+    </div>
+    );
 }
 
-export default First;
+export default Main;
