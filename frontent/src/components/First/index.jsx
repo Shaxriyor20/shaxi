@@ -11,7 +11,7 @@ import About from '../About';
 import Galereya from '../Galereya';
 import ContactsForm from '../ContactsForm';
 import Reviews from '../Reviews';
-function Main() {
+function First() {
     return (
     <div>
         <div className="body-v">
@@ -50,4 +50,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default First;

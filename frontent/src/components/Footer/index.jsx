@@ -15,7 +15,7 @@ function Footer() {
                 <img src={air} alt="air"/>
                 </Link>
             <div className="links">
-                <Link to="/">Главная</Link>
+                <Link to="/about">О нас</Link>
                 <Link to="/excursions">Экскурсии</Link>
                 <Link to="/">Личный кабинет</Link>
             </div>
@@ -28,9 +28,15 @@ function Footer() {
                 <div className="email">
                     <img src={mail} alt="" /> <span>office@perotravel.ru</span>
                 </div>
-                <Link ><img src={vk} alt="Vk" /></Link>
-                <Link><img src={ins} alt="Instagram" /></Link>
-                <Link><img src={fac} alt="Facebook" /></Link>
+                <Link to={"https://vk.com/id636567521"}>
+                    <img src={vk} alt="Vk" />
+                </Link>
+                <Link to={"https://www.instagram.com/shaxriyor_2629?utm_source=qr&igsh=MW5paTNodHY0a3hsMQ=="}>
+                    <img src={ins} alt="Instagram" />
+                </Link>
+                <Link to={"https://www.facebook.com/profile.php?id=61554497423006&mibextid=2JQ9oc"}>
+                    <img src={fac} alt="Facebook" />
+                </Link>
             </div>
         </div>
     );
