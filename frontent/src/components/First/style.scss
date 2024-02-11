@@ -29,7 +29,7 @@
                 }
 
                 .subtitle {
-                    color: #00000000;
+                    color: rgba(0, 0, 0, 0.5); /* Прозрачный цвет текста (черный с 50% прозрачности) */
                     font-weight: bold;
                     -webkit-text-stroke-width: 1px;
                     -webkit-text-stroke-color: $light;
@@ -55,7 +55,6 @@
                 position: absolute;
                 left: 200px;
                 top: 500px;
-                z-index: 9;
                 display: inline-block;
                 background-color: $blue; /* Глубокий цвет (Midnight Blue) */
                 color: white;

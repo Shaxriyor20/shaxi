@@ -1,11 +1,7 @@
 @import "../../assets/style/settings";
 .galery-wrapper {
     .top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin: 10px 30px;
-        padding: 40px 130px;
 
         span:first-child {
             font-size: 24px;
@@ -18,11 +14,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
-        padding: 10px 120px;
-
-        * {
-            display: inline;
-        }
+        padding: 10px 40px;
 
         img {
             padding: 7px;
