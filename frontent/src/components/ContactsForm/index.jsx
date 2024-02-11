@@ -43,6 +43,7 @@ function ContactsForm() {
             <form onSubmit={submit}>
                 <h1>Остались вопросы?</h1>
                 <h3>Оставь заявку и мы ответим</h3>
+                <br />
                 <input
                     id="full-name-input" type="text"
                     placeholder="Полное имя" name='name'
