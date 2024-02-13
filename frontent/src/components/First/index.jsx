@@ -6,7 +6,7 @@ import Image7 from '../../assets/images/play4.png'
 import Image3 from '../../assets/images/About.png'
 import Marquee from 'react-fast-marquee';
 
-import NewExcurc from '../NewExcurs';
+import Excurs2 from '../Excurs2';
 import About from '../About';
 import Galereya from '../Galereya';
 import ContactsForm from '../ContactsForm';
@@ -35,7 +35,7 @@ function First() {
                 <img src={Image3} alt="" />  
             </Marquee>
         </div>
-        <NewExcurc/>
+        <Excurs2/>
             <About/> 
             <Galereya/>
             <br />
